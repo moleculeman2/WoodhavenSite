@@ -1,0 +1,146 @@
+#carouselExampleIndicators{
+	margin: 20px;
+}
+
+.d-block.w-100{
+	object-fit: scale-down;
+	max-height: 500px;
+}
+html{
+	height: 100%;
+}
+body{
+	background-color: rgb(238, 229, 174);
+	background-image: url("../img/forest.jpg");
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card{
+	margin: 10px;
+}
+#logo-bar{
+	border-bottom: 1px solid black;
+}
+
+#blurb-1{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 80px, 0px, 0px, 80px;
+}
+
+.blurb-text{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(218, 165, 32, 0.8);
+	box-shadow: 0px 0px 5px goldenrod;
+	padding: 35px;
+}
+input[type=submit]{
+	font-size: 2em;
+	background: #739c8d;
+	border: 1px solid #8ca894;
+	font-family: Sans-serif;
+	color: #151a18;
+	border-radius: 10%;
+}
+
+input[type=reset]{
+	background: #ab3e3e;
+	border: 1px solid #990053;
+	font-family: Sans-serif;
+	color: white;
+	border-radius: 10%;
+}
+
+input[type=submit]:hover{
+	background: #252e25;
+	opacity: 0.5;
+	border: 1px solid #8ca894;
+	font-family: Sans-serif;
+	color: #4b5752;
+}
+
+/* NAV BELOW */
+#logo-bar{
+	display: flex;
+	justify-content: space-between;
+}
+
+#top-logo{
+	border: 2px solid #5c470d;
+	border-radius: 20%;
+	max-width: 60%;
+	height:auto;
+	display:block;
+	margin:auto;
+	margin-top:10px;	
+	margin-bottom:10px;
+}
+#top-left-info{
+	margin-left: 20px;
+	display: flex;
+	color: #5c470d;
+	align-items:center;
+	justify-content:center;
+	max-width: 100%;
+}
+#top-left-info li{
+	padding: 5px;
+}
+
+#top-right-info{
+	margin-right: 20px;
+	display: flex;
+	color: gold;
+	align-items:center;
+	justify-content:center;
+	max-width: 100%;
+}
+
+#top-right-info a{
+	background-color: #d4a217;
+	border: 2px solid #5c470d;
+	border-radius: 30%;
+}
+
+#nav {
+	background-color: rgba(238, 229, 174, 0.8);
+    overflow: hidden;
+    min-height: 60px;
+	padding-bottom: 10px;
+	z-index: 9999;
+}
+
+#nav a {
+    float: left;
+    color: #5c470d;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#nav a:hover {
+	background-color: #f2ce6b;
+	color: black;
+}
+
+#nav a.active {
+	background-color: #d4a217;
+	color: #151a18;
+	pointer-events: none;
+	cursor: default;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
