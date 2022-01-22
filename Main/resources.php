@@ -10,12 +10,12 @@
 		<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
     	<meta http-equiv="Pragma" content="no-cache">
     	<meta http-equiv="Expires" content="0">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css?v=1">
+    	<link rel="stylesheet" type="text/css" href="css/style.css?v=1">
 		<script src="js/script.js" defer></script>
 		<script src="js/slideshow.js" defer></script>
 		<title>Woodhaven</title>
 	</head>
+	
 	<body>
 		<?php include_once('nav.php');?>
 		<div id='main'>
@@ -28,12 +28,10 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="img/1.jpg" alt="First slide">
-                        <!--
                         <div class="carousel-caption d-none d-md-block">
                             <h5>My Caption Title (1st Image)</h5>
                             <p>The whole caption will only show up if the screen is at least medium size.</p>
                         </div>
-                        -->
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="img/2.jpg" alt="Second slide">

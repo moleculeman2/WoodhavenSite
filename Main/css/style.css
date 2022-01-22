@@ -1,37 +1,33 @@
-#carouselExampleIndicators{
-	margin: 20px;
-}
-
-.d-block.w-100{
-	object-fit: scale-down;
-	max-height: 500px;
-}
 html{
 	height: 100%;
 }
 body{
 	background-color: rgb(238, 229, 174);
-	background-image: url("../img/forest.jpg");
+	background-image: url("../img/background.jpg");
 	height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
 }
 
+#carouselExampleIndicators{
+	margin: 20px;
+}
+.d-block.w-100{
+	object-fit: scale-down;
+	max-height: 500px;
+}
 .card{
 	margin: 10px;
 }
-#logo-bar{
-	border-bottom: 1px solid black;
-}
-
 #blurb-1{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin: 80px, 0px, 0px, 80px;
+	margin: 80px 0px 80px 0px;
 }
-
 .blurb-text{
 	display: flex;
 	justify-content: center;
@@ -41,46 +37,38 @@ body{
 	box-shadow: 0px 0px 5px goldenrod;
 	padding: 35px;
 }
-input[type=submit]{
-	font-size: 2em;
-	background: #739c8d;
-	border: 1px solid #8ca894;
-	font-family: Sans-serif;
-	color: #151a18;
-	border-radius: 10%;
+
+
+#nav {
+	background-color: rgba(238, 229, 174, 0.8);
+	min-height: 60px;
+	padding-bottom: 9px;
+	z-index: 9999;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
-input[type=reset]{
-	background: #ab3e3e;
-	border: 1px solid #990053;
-	font-family: Sans-serif;
-	color: white;
-	border-radius: 10%;
-}
-
-input[type=submit]:hover{
-	background: #252e25;
-	opacity: 0.5;
-	border: 1px solid #8ca894;
-	font-family: Sans-serif;
-	color: #4b5752;
-}
-
-/* NAV BELOW */
 #logo-bar{
+	border-bottom: 1px solid black;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#logo-bar>div{
+	flex-grow: 1;
 }
 
 #top-logo{
-	border: 2px solid #5c470d;
 	border-radius: 20%;
-	max-width: 60%;
+	max-width: 100%;
 	height:auto;
 	display:block;
-	margin:auto;
-	margin-top:10px;	
+	margin-top:10px;
 	margin-bottom:10px;
+	font: 3em cursive;
 }
 #top-left-info{
 	margin-left: 20px;
@@ -93,7 +81,6 @@ input[type=submit]:hover{
 #top-left-info li{
 	padding: 5px;
 }
-
 #top-right-info{
 	margin-right: 20px;
 	display: flex;
@@ -102,45 +89,55 @@ input[type=submit]:hover{
 	justify-content:center;
 	max-width: 100%;
 }
-
 #top-right-info a{
 	background-color: #d4a217;
 	border: 2px solid #5c470d;
 	border-radius: 30%;
+	float: left;
+	color: #5c470d;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-size: 17px;
 }
-
-#nav {
-	background-color: rgba(238, 229, 174, 0.8);
-    overflow: hidden;
-    min-height: 60px;
-	padding-bottom: 10px;
-	z-index: 9999;
+#links{}
+#links a {
+	color: #5c470d;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	padding: 10px 20px 10px 20px;
 }
-
-#nav a {
-    float: left;
-    color: #5c470d;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-#nav a:hover {
+#links a:hover {
 	background-color: #f2ce6b;
 	color: black;
 }
-
-#nav a.active {
+#links a.active {
 	background-color: #d4a217;
 	color: #151a18;
 	pointer-events: none;
 	cursor: default;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.dropdown {
+	margin-top: 7px;
+	position: relative;
+	display: inline-block;
 }
+.dropdown-content {
+	margin-top: 7px;
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.dropdown:hover .dropdown-content {display: block;}
+
+
